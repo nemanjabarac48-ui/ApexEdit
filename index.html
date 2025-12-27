@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEXEDIT | Web Design & Advertising</title>
+<meta name="description" content="APEXEDIT – High-end web design and performance advertising for modern brands.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0a0a0a;
+  color:#f5f5f5;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+
+:root{
+  --accent:#00ffd5;
+}
+
+/* ====== GLOBAL ====== */
+section{
+  padding:100px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+h2{
+  text-align:center;
+  font-size:2.6rem;
+  margin-bottom:60px;
+}
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s ease;
+}
+.fade.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ====== HERO ====== */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:radial-gradient(circle at top,#111,#000);
+}
+.hero h1{
+  font-size:clamp(3rem,6vw,4.5rem);
+  letter-spacing:2px;
+}
+.hero span{color:var(--accent)}
+.hero p{
+  max-width:650px;
+  margin:25px auto 45px;
+  color:#ccc;
+}
+.btn{
+  display:inline-block;
+  padding:16px 42px;
+  border-radius:40px;
+  background:var(--accent);
+  color:#000;
+  font-weight:600;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.05);opacity:.85}
+
+/* ====== SERVICES ====== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.card{
+  background:#111;
+  padding:35px;
+  border-radius:18px;
+  border:1px solid #222;
+  transition:.4s;
+}
+.card:hover{
+  transform:translateY(-10px);
+  border-color:var(--accent);
+}
+.card h3{
+  color:var(--accent);
+  margin-bottom:15px;
+}
+
+/* ====== PROCESS ====== */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+.step{
+  background:#0f0f0f;
+  padding:30px;
+  border-radius:16px;
+  border-left:4px solid var(--accent);
+}
+
+/* ====== CTA ====== */
+.cta{
+  background:linear-gradient(135deg,var(--accent),#00c2a6);
+  color:#000;
+  text-align:center;
+  border-radius:25px;
+}
+.cta p{
+  max-width:600px;
+  margin:20px auto 40px;
+}
+
+/* ====== CONTACT ====== */
+.contact-box{
+  text-align:center;
+}
+.contact-box a{
+  display:inline-block;
+  margin:10px;
+  font-weight:600;
+}
+
+/* ====== FOOTER ====== */
+footer{
+  background:#050505;
+  padding:35px 20px;
+  text-align:center;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="fade">
+    <h1>APEX<span>EDIT</span></h1>
+    <p>
+      Premium web design & high-performance advertising.
+      We help brands grow, scale and dominate online.
+    </p>
+    <a href="#contact" class="btn">Work With Us</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="fade">
+  <h2>Who We Are</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;color:#ccc">
+    APEXEDIT is a modern digital agency specializing in web design,
+    landing pages and paid advertising. We focus on clean visuals,
+    strong branding and measurable results.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="fade">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Modern, responsive websites designed to convert visitors into customers.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>High-converting landing pages built specifically for ad traffic.</p>
+    </div>
+    <div class="card">
+      <h3>Ad Campaign Management</h3>
+      <p>Facebook, Instagram & Google Ads with full strategy and optimization.</p>
+    </div>
+    <div class="card">
+      <h3>Brand Strategy</h3>
+      <p>Clear positioning, messaging and visual identity for serious brands.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="fade">
+  <h2>How We Work</h2>
+  <div class="steps">
+    <div class="step">
+      <h3>1. Strategy</h3>
+      <p>We analyze your market, audience and goals.</p>
+    </div>
+    <div class="step">
+      <h3>2. Design</h3>
+      <p>We create a clean, modern and conversion-focused design.</p>
+    </div>
+    <div class="step">
+      <h3>3. Launch & Scale</h3>
+      <p>We launch ads, track data and scale what works.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta fade">
+  <h2>Ready to Scale Your Business?</h2>
+  <p>
+    Let APEXEDIT build your online presence and turn traffic into revenue.
+  </p>
+  <a href="#contact" class="btn">Get In Touch</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p>Email: <strong>contact@apexedit.com</strong></p>
+    <p>Instagram:</p>
+    <a href="https://instagram.com/apexedit" target="_blank" class="btn">
+      @apexedit
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 APEXEDIT. All rights reserved.</p>
+</footer>
+
+<script>
+const faders=document.querySelectorAll('.fade');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('show');
+    }
+  });
+},{threshold:0.2});
+faders.forEach(f=>obs.observe(f));
+</script>
+
+</body>
+</html>
